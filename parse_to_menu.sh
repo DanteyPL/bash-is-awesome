@@ -17,8 +17,8 @@ echo "$choice" | while read -r item; do
     echo Key: "$item"
     for((i=0;i<amount;i++));do
         if [[ "$item" = "${menu[$((i*3))]}" ]];then
-        echo Value: "${menu[$((i*3 + 1))]}"
-        break
+            echo Value: "${menu[$((i*3 + 1))]}"
+            break
         fi
     done
 done
